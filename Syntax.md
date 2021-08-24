@@ -16,19 +16,14 @@ false
 ```
 ## Functions
 ```
-func myFunc(arg1, arg2) {
-    
-}
-myFunc(1,2)
-// ES6-Like functions? (Great for callback readablility)
-const myFunc = (arg1, arg2) => {
-
-}
+func myFunction(u32 arg1, boolean arg2) -> void {}
+// If function is a var:
+func myFunction = (u32 arg1, boolean arg2) -> void {}
 ```
 ## If/else
 ```
-mut isAirplane = true
-mut isBiplane = false
+boolean isAirplane = true
+boolean isBiplane = false
 if (isAirplane && isBiplane) {
 
 } else if (isAirplane && !isBiplane) {
@@ -145,28 +140,30 @@ Multi Line Comment
 ## Variables
 **Inmutable**
 ```
-const foo = "bar"
+string foo = "bar"
 ```
 **Mutable**
 ```
-mut foo: string = "bar"
+string* foo = "bar"
 ```
 **Edit Mutable**
 ```
-mut foo: string = "bar"
+string* foo = "bar"
 foo = "moo"
 ```
-## Unknown
-Maybe?
+**Union types**
+```
+[string | boolean] foo = "bar"
+```
 ## Objects
 ```
-mut foo = {
+obj foo = {
     moo: "bar"
 }
 ```
 ## Array
 ```
-mut foo: Array<string> = ["foo", "moo", "bar"]
+string[] foo = ["foo", "moo", "bar"]
 foo[0]
 ```
 ## Template Literals
@@ -202,7 +199,7 @@ const [ foo, bar ] = import('./')
 ```
 ## Import functions
 ```
-import func myFunc(arg1, arg2): void
+import func myFunc(string arg1, string arg2) -> void
 ```
 ## Export
 ```

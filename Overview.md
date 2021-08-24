@@ -2,11 +2,9 @@
  <br>
  a. Use binaryen
  <br>
- b. Not tied to runtime/platform (CLI? Pure WebAssembly would be sick)
+ b. Not tied to runtime/platform
  <br>
  c. Compile to native via wasm2c or LLVM?
- <br>
- d. Allow user to create compile flags
 2. Closures
  <br>
  a. Complete asap
